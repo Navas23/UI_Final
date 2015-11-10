@@ -968,3 +968,619 @@
 .dark .ui-context-menu .title{
   color: #d2dce2;
 }
+
+
+/* ----------------------------------------------------- */
+/* --------------------- BASIC TABS -------------------- */
+/* ----------------------------------------------------- */
+
+
+.ui-view .ui-tab-basic{
+  height: 26px;
+  width: 554px;
+  border-bottom: 1px solid #ccd3d5;
+  background-color: #f7f8fa;
+}
+
+.ui-view .ui-tab-element{
+  float: left;
+  list-style-type: none;
+  margin-left: 2px;
+  height: 25px;
+  min-width: 55px;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  -webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+
+.ui-view .ui-tab-element:hover{
+  border-top: 1px solid #ccd3d5;
+  border-right: 1px solid #ccd3d5;
+  border-left: 1px solid #ccd3d5;
+  background-color: #eef0f4;
+}
+
+.ui-view .ui-tab-element.active{
+  border-top: 1px solid #ccd3d5;
+  border-right: 1px solid #ccd3d5;
+  border-left: 1px solid #ccd3d5;
+  background-color: #fff;
+}
+
+.ui-view .ui-tab-element span{
+  float: left;
+  width: calc(100% - 20px);
+  text-align: center;
+  margin-top: 8px;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ui-view .ui-tab-element span{
+  color: #889399;
+}
+
+.ui-view .ui-tab-element.active span{
+  color: #545f65;
+}
+
+/* dark */
+
+.ui-view.dark .ui-tab-basic{
+  border-bottom: 1px solid #323940;
+  background-color: #3f4750;
+}
+
+.ui-view.dark .ui-tab-element:hover{
+  border-top: 1px solid #363c43;
+  border-right: 1px solid #363c43;
+  border-left: 1px solid #363c43;
+  background-color: #363c43;
+}
+
+.ui-view.dark .ui-tab-element.active{
+  border-top: 1px solid #323940;
+  border-right: 1px solid #323940;
+  border-left: 1px solid #323940;
+  background-color: #545f65;
+}
+
+.ui-view.dark .ui-tab-element.active span{
+  color: #d2dce2;
+}
+
+/* ----------------------------------------------------- */
+/* --------------------- CLOSE TABS -------------------- */
+/* ----------------------------------------------------- */
+
+.ui-view .ui-tab-close{
+  height: 26px;
+  width: 554px;
+  border-bottom: 1px solid #ccd3d5;
+  background-color: #f7f8fa;
+}
+
+.ui-view .ui-tab-element{
+  float: left;
+  list-style-type: none;
+  height: 25px;
+  min-width: 55px;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+.ui-view .ui-tab-element:hover{
+  border-top: 1px solid #ccd3d5;
+  border-right: 1px solid #ccd3d5;
+  border-left: 1px solid #ccd3d5;
+  background-color: #eef0f4;
+}
+
+.ui-view .ui-tab-element.active{
+  border-top: 1px solid #ccd3d5;
+  border-right: 1px solid #ccd3d5;
+  border-left: 1px solid #ccd3d5;
+  background-color: #fff;
+}
+
+.ui-view .ui-tab-element span{
+  float: left;
+  width: calc(100% - 20px);
+  text-align: center;
+  margin-top: 8px;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ui-view .ui-tab-element span{
+  color: #889399;
+}
+
+.ui-view.white .ui-tab-element.active span{
+  color: #545f65;
+}
+
+/* dark */
+
+.ui-view.dark .ui-tab-close{
+  border-bottom: 1px solid #323940;
+  background-color: #3f4750;
+}
+
+.ui-view.dark .ui-tab-element:hover{
+  border-top: 1px solid #363c43;
+  border-right: 1px solid #363c43;
+  border-left: 1px solid #363c43;
+  background-color: #363c43;
+}
+
+.ui-view.dark .ui-tab-element.active{
+  border-top: 1px solid #323940;
+  border-right: 1px solid #323940;
+  border-left: 1px solid #323940;
+  background-color: #545f65;
+}
+
+.ui-view.dark .ui-tab-element.active span{
+  color: #d2dce2;
+}
+
+/* ----------------------------------------------------- */
+/* ---------------------- CHECKBOX --------------------- */
+/* ----------------------------------------------------- */
+
+.ui-view .ui-checkbox{
+  position: relative;
+  margin-left: 5px;
+  width: 13px;
+	height: 13px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px rgba(0,0,0,.05);
+	border: solid 1px #ccd3d5;
+  overflow: hidden;
+  background-color: #60b25e;
+  animation: ui-checkbox-background-out-animation 0.2s forwards, ui-checkbox-border-out-first-animation 0.2s forwards, ui-checkbox-border-out-second-animation 0.2s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+}
+
+.ui-view .ui-checkbox.active{
+	background-color: #cfe8ce;
+  box-shadow: 0px 0px 0px 3px #60b25e;
+  animation: ui-checkbox-border-in-animation 0.2s forwards, ui-checkbox-background-in-animation 0.2s forwards,  ui-checkbox-bordertrans-in-animation 0.2s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  border: solid 1px #ccd3d5;
+}
+
+.ui-view .ui-checkbox.active:before{
+  content: "";
+  float: left;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(96, 178, 94, 1);
+  z-index: 1;
+  animation: 0.01s ui-checkbox-before-appear-animation forwards,  ui-checkbox-check-in-animation 0.2s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-delay: 0.2s;
+  margin-left: 0px;
+  opacity: 0;
+}
+
+.ui-view .ui-checkbox.active i{
+  float: left;
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  background-image: none;
+  background-size: 7px 8px;
+  margin: 3px;
+  animation: 0.1s ui-checkbox-check-appear-animation forwards;
+  animation-delay: 0.21s;
+  animation-iteration-count: 1;
+}
+
+.ui-view .ui-checkbox i{
+  float: left;
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  background-image: none;
+  background-size: 7px 8px;
+  margin: 3px;
+  animation: 0.25s ui-checkbox-check-disappear-animation forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.ui-view .ui-checkbox.inactive{
+  background-color: #f0f0f0;
+  animation: none;
+  box-shadow: none;
+}
+
+.ui-view .ui-checkbox.inactive i{
+  animation: none;
+}
+
+@keyframes ui-checkbox-border-in-animation{
+    0%{ box-shadow: 0px 0px 0px 3px rgba(96, 178, 94, 0.3), inset 0px 1px #c6dfc5; }
+    100%{ box-shadow: 0px 0px 0px 0px rgba(96, 178, 94, 1), inset 0px 1px rgba(96, 178, 94, 1); }
+}
+
+@keyframes ui-checkbox-background-in-animation{
+    0%{ background-color: #cfe8ce; }
+    100%{ background-color: rgba(96, 178, 94, 1); }
+}
+
+@keyframes ui-checkbox-bordertrans-in-animation{
+    0%{   border: solid 1px #abc9b1; }
+    100%{   border: solid 1px  rgba(96, 178, 94, 1); }
+}
+
+@keyframes ui-checkbox-before-appear-animation{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+@keyframes ui-checkbox-check-appear-animation{
+    0%{ background-image: none; }
+    100%{ background-image: url('tick.png'); }
+}
+
+@keyframes ui-checkbox-check-in-animation{
+    0%{ margin-left: 0px; }
+    100%{ margin-left: 15px; }
+}
+
+@keyframes ui-checkbox-background-out-animation{
+    0%{ background-color: #60b25e; }
+    100%{ background-color: #fff; }
+}
+
+@keyframes ui-checkbox-border-out-first-animation{
+    0%{ box-shadow: 0px 0px 0px 0px rgba(96, 178, 94, 1); }
+    100%{ box-shadow: 0px 0px 0px 3px rgba(96, 178, 94, 0), inset 0 1px rgba(0,0,0,.05); }
+}
+
+@keyframes ui-checkbox-border-out-second-animation{
+    0%{ border: solid 1px  rgba(96, 178, 94, 1); }
+    100%{ border: solid 1px  #ccd3d5; }
+}
+
+@keyframes  ui-checkbox-check-disappear-animation{
+  0%{ background-image: url('tick.png');opacity: 1; transform: scale(1)}
+  100%{ background-image: url('tick.png');opacity: 0; transform: scale(1.4) }
+}
+
+/* dark */
+
+.ui-view.dark .ui-checkbox{
+  position: relative;
+  margin-left: 5px;
+  width: 13px;
+	height: 13px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px rgba(0,0,0,.05);
+	border: solid 1px #323940;
+  overflow: hidden;
+  background-color: #60b25e;
+  animation: ui-checkbox-background-out-dark-animation 0.2s forwards, ui-checkbox-border-out-first-dark-animation 0.2s forwards, ui-checkbox-border-out-third-dark-animation 0.2s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+}
+
+.ui-view.dark .ui-checkbox.active{
+	background-color: #cfe8ce;
+  box-shadow: 0px 0px 0px 3px #60b25e;
+  animation: ui-checkbox-border-in-dark-animation 0.2s forwards, ui-checkbox-background-in-dark-animation 0.2s forwards,  ui-checkbox-bordertrans-in-dark-animation 0.2s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  border: solid 1px #ccd3d5;
+}
+
+.ui-view.dark .ui-checkbox.active:before{
+  content: "";
+  float: left;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(96, 178, 94, 1);
+  z-index: 1;
+  animation: 0.01s ui-checkbox-before-appear-dark-animation forwards,  ui-checkbox-check-in-dark-animation 0.2s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-delay: 0.2s;
+  margin-left: 0px;
+  opacity: 0;
+}
+
+.ui-view.dark .ui-checkbox.active i{
+  float: left;
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  background-image: none;
+  background-size: 7px 8px;
+  margin: 3px;
+  animation: 0.1s ui-checkbox-check-appear-dark-animation forwards;
+  animation-delay: 0.21s;
+  animation-iteration-count: 1;
+}
+
+.ui-view.dark .ui-checkbox i{
+  float: left;
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  background-image: none;
+  background-size: 7px 8px;
+  margin: 3px;
+  animation: 0.2s ui-checkbox-check-disappear-dark-animation forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.ui-view.dark .ui-checkbox.inactive{
+  background-color: #4a535b;
+  border: 1px solid #384048;
+  animation: none;
+  box-shadow: none;
+}
+
+.ui-view.dark .ui-checkbox.inactive i{
+  animation: none;
+}
+
+@keyframes ui-checkbox-border-in-dark-animation{
+    0%{ box-shadow: 0px 0px 0px 3px rgba(96, 178, 94, 0.3), inset 0px 1px #55755f; }
+    100%{ box-shadow: 0px 0px 0px 0px rgba(96, 178, 94, 1), inset 0px 1px rgba(96, 178, 94, 1); }
+}
+
+@keyframes ui-checkbox-background-in-dark-animation{
+    0%{ background-color: #587863; }
+    100%{ background-color: rgba(96, 178, 94, 1); }
+}
+
+@keyframes ui-checkbox-bordertrans-in-dark-animation{
+    0%{   border: solid 1px #405e49; }
+    100%{   border: solid 1px  rgba(96, 178, 94, 1); }
+}
+
+@keyframes ui-checkbox-before-appear-dark-animation{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+@keyframes ui-checkbox-check-appear-dark-animation{
+    0%{ background-image: none; }
+    100%{ background-image: url('tick.png'); }
+}
+
+@keyframes ui-checkbox-check-in-dark-animation{
+    0%{ margin-left: 0px; }
+    100%{ margin-left: 15px; }
+}
+
+@keyframes ui-checkbox-background-out-dark-animation{
+    0%{ background-color: #60b25e; }
+    100%{ background-color: #545f65; }
+}
+
+@keyframes ui-checkbox-border-out-first-dark-animation{
+    0%{ box-shadow: 0px 0px 0px 0px rgba(96, 178, 94, 1); }
+    100%{ box-shadow: 0px 0px 0px 3px rgba(96, 178, 94, 0), inset 0 1px rgba(0,0,0,.05); }
+}
+
+@keyframes ui-checkbox-border-out-second-dark-animation{
+    0%{ box-shadow: 0px 0px 0px 2px #60b25e; }
+    100%{ box-shadow: inset 0 1px rgba(0,0,0,.05); }
+}
+
+@keyframes ui-checkbox-border-out-third-dark-animation{
+    0%{ border: solid 1px  rgba(96, 178, 94, 1); }
+    100%{ border: solid 1px  #323940; }
+}
+
+@keyframes  ui-checkbox-check-disappear-dark-animation{
+  0%{ background-image: url('tick.png');opacity: 1; transform: scale(1)}
+  100%{ background-image: url('tick.png');opacity: 0; transform: scale(1.4) }
+}
+
+/* ----------------------------------------------------- */
+/* ------------------- RADIO BUTTONS ------------------- */
+/* ----------------------------------------------------- */
+
+.ui-view .ui-radio-button{
+  position: relative;
+  width: 13px;
+	height: 13px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #60b25e;
+	-webkit-box-shadow: inset 0 1px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px rgba(0,0,0,.05);
+	border: solid 1px #ccd3d5;
+  animation: ui-radio-button-forth-animation 0.17s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.ui-view .ui-radio-button.active{
+  background-color: #cfe8ce;
+  box-shadow: 0px 0px 0px 3px #60b25e;
+  border: solid 1px #ccd3d5;
+  animation: ui-radio-button-first-animation  0.2s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.ui-view .ui-radio-button i{
+  float: left;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 3px;
+  margin-left: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  opacity: 0;
+  animation: ui-radio-button-third-animation 0.17s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.ui-view .ui-radio-button.active i{
+  animation: ui-radio-button-second-animation  0.13s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+}
+
+.ui-view .ui-view-spot.inactive{
+  background-color: #f0f0f0;
+  animation: none;
+}
+
+@keyframes ui-radio-button-first-animation{
+    0%{   box-shadow: 0px 0px 0px 3px rgba(96, 178, 94, 0.3), inset 0px 1px #c6dfc5;
+          background-color: #cfe8ce;
+          border: solid 1px #abc9b1;
+     }
+    100%{ box-shadow: 0px 0px 0px 0px rgba(96, 178, 94, 1), inset 0px 1px rgba(96, 178, 94, 1);
+          background-color: rgba(96, 178, 94, 1);
+          border: solid 1px  rgba(96, 178, 94, 1);
+    }
+}
+
+@keyframes ui-radio-button-second-animation{
+  0%{   opacity: 0; transform: scale(0);}
+  100%{ opacity: 1; transform: scale(1); }
+}
+
+@keyframes ui-radio-button-third-animation{
+  0%{   opacity: 1; transform: scale(1);}
+  100%{ opacity: 0; transform: scale(0); }
+}
+
+@keyframes ui-radio-button-forth-animation{
+  0%{   background-color: #60b25e;
+        box-shadow: 0px 0px 0px 0px rgba(96, 178, 94, 1);
+        border: solid 1px  rgba(96, 178, 94, 1);
+  }
+  100%{ background-color: #fff;
+        box-shadow: 0px 0px 0px 3px rgba(96, 178, 94, 0), inset 0 1px rgba(0,0,0,.05);
+        border: solid 1px  #ccd3d5;
+   }
+}
+
+/* dark */
+
+.ui-view.dark .ui-radio-button{
+  position: relative;
+  width: 13px;
+	height: 13px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #60b25e;
+	-webkit-box-shadow: inset 0 1px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px rgba(0,0,0,.05);
+	border: solid 1px #323940;
+  animation: ui-radio-button-forth-dark-animation 0.17s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.ui-view.dark .ui-radio-button.active{
+  background-color: #cfe8ce;
+  box-shadow: 0px 0px 0px 3px #60b25e;
+  border: solid 1px #ccd3d5;
+  animation: ui-radio-button-first-dark-animation  0.2s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.ui-view.dark .ui-radio-button i{
+  float: left;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 3px;
+  margin-left: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  opacity: 0;
+  animation: ui-radio-button-third-dark-animation 0.17s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.ui-view.dark .ui-radio-button.active i{
+  animation: ui-radio-button-second-dark-animation  0.13s forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+}
+
+.ui-view.dark .ui-view-spot.inactive{
+  background-color: #4a535b;
+  animation: none;
+  border: 1px solid #384048;
+  box-shadow: none;
+}
+
+@keyframes ui-radio-button-first-dark-animation{
+    0%{   box-shadow: 0px 0px 0px 3px rgba(96, 178, 94, 0.3), inset 0px 1px #55755f;
+          background-color: #587863;
+          border: solid 1px #405e49;
+     }
+    100%{ box-shadow: 0px 0px 0px 0px rgba(96, 178, 94, 1), inset 0px 1px rgba(96, 178, 94, 1);
+          background-color: rgba(96, 178, 94, 1);
+          border: solid 1px  rgba(96, 178, 94, 1);
+    }
+}
+
+@keyframes ui-radio-button-second-dark-animation{
+  0%{   opacity: 0; transform: scale(0);}
+  100%{ opacity: 1; transform: scale(1); }
+}
+
+@keyframes ui-radio-button-third-dark-animation{
+  0%{   opacity: 1; transform: scale(1);}
+  100%{ opacity: 0; transform: scale(0); }
+}
+
+@keyframes ui-radio-button-forth-dark-animation{
+  0%{   background-color: #60b25e;
+        box-shadow: 0px 0px 0px 0px rgba(96, 178, 94, 1);
+        border: solid 1px  rgba(96, 178, 94, 1);
+  }
+  100%{ background-color: #545f65;
+        box-shadow: 0px 0px 0px 3px rgba(96, 178, 94, 0), inset 0 1px rgba(0,0,0,.05);
+        border: solid 1px  #323940;
+   }
+}
