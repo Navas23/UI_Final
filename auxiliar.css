@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.ui-view{
+  background-color: #f7f8fa;
+}
+
 .ui-view.dark{
   background-color: #3f4750;
 }
@@ -32,7 +36,7 @@ div{
 
 .ui-content{
   margin-left: 70px;
-  margin-bottom: 45px;
+  padding-bottom: 45px;
 }
 
 .content-use, .content-example{
